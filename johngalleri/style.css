@@ -1,0 +1,651 @@
+/*
+Author: Nanna Møller-Christensen
+Theme: johngalleri
+Version: 1.0
+*/
+
+/* Generel styling*/ 
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+h1, h2, h3, p {
+    font-family: "lato", sans-serif;
+}
+
+
+a:link {
+    text-decoration: none;
+}
+
+.active img {
+    height: 25px;
+    width: 25px;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color: white;
+    position: relative;
+    height: 100px;
+  }
+  
+  
+  .topnav #myLinks {
+    display: none;
+  
+  }
+  
+  .topnav a {
+    color: red;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 1px;
+    font-size: 20px;
+  
+    
+  }
+  
+  .topnav a.icon {
+    background: white;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 50px;
+    width: 50px;
+  }
+  
+  .topnav a:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .active {
+    background-color: white;
+    color: white;   
+  }
+  
+
+/* Menu styling */
+.logo {
+    height: 100px;
+    width: 10vw;
+    background-image: url("img/johnlogo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.nav-menu {
+    display: flex;
+    width: 100vw;
+    height: 125px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black !important;
+}
+
+.nav-menu a {
+    color: black;
+}
+
+.minelinks {
+    list-style: none;
+    height: 50px;
+    width: 70vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+ul {
+    padding-top: 10px;
+}
+
+li {
+    width: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    transition: 0.4s;
+    background-color: #ffffff00;
+    font-size: 20px;
+    font-weight:400;
+}
+
+li a:hover {
+    background-color: #530000d0;
+    color: white;
+    height: 125px;
+    width: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+
+}
+
+/* Forside Styling */
+
+.heading {
+    height: 60vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.headingcontent {
+    height: 30vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 100px !important;
+    text-align: center;
+}
+
+.headerbtns {
+    height: 30vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 200px;
+}
+
+.btn1 {
+    width: 150px !important;
+    height: 70px;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    transition: 0.5s;
+    font-size: 20px;
+}
+
+.btn1:hover {
+    transform: scale(1.1);
+    transition: 1s;
+    color: black;
+}
+
+.indexcategories {
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e8ded121;
+}
+
+.indexboxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.indexbox {
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 400px;
+    border-radius: 70px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+
+.indexboxtext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #530000bd;
+    width: 100%;
+    font-size: 30px;
+    height: 25%;
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    transition: 0.3s;
+}
+
+.indexboxtext:hover {
+    background-color: #2C4F5Ebd;
+    transition: 0.3s;
+}
+
+.boxp {
+    color: white;
+}
+
+.malerier_content {
+    height: auto;
+    width: 100vw;
+}
+
+
+/* Forside udstillinger styling*/
+
+.udstillinger1 {
+    height: 100vh;
+    width: 100vw;
+    background-color: #530000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: whitesmoke;
+}
+
+.udstillinger2 {
+    height: 100vh;
+    width: 100vw;
+    background-color: #E8DED1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.udstillinger3 {
+    height: 100vh;
+    width: 100vw;
+    background-color: #2C4F5E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: whitesmoke;
+}
+
+.udstilling_img {
+    width: 50%;
+}
+
+.udstillingerimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    width: 37.5%;
+    border-radius: 20px;
+    background-position: center;
+}
+
+.udstillinger_content {
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.udstillinger_text {
+    width: 70%;
+    height: 100px;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.udstillinger_subtext {
+    width: 70%;
+    height: 500px;
+    font-size: 20px;
+}
+
+/* Malerier styling */
+
+/* Skulpturer styling */
+
+/* Kunsttryk styling */
+
+.kunsttryk_content {
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+/* Udstillinger styling */
+
+.udstillinger_indhold {
+    height: auto;
+    width: 100vw;
+    background-color: #e8ded121;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.udstillinger_indhold1 {
+    height: auto;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.udtillinger_titel {
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.udstillinger_img {
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 50px;
+}
+
+/* Udstilling 1*/
+
+
+
+.udstilling_1_heading {
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.udstilling_1_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #e8ded121;
+    margin-top: 50px;
+}
+
+.udstilling_row1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.udstilling1_row_content {
+    width: 400px;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.udstilling_1_item {
+    width: 300px;
+    height: 500px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.udstilling_1_text {
+    width: auto;
+    height: 50px;
+}
+
+.udstilling_1_subtext {
+    width: 300px;
+    height: 100px;
+}
+
+/* Om John styling */
+
+.om_john_content {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    background-color: #e8ded121;
+}
+
+/* Kontakt styling */
+
+.heading_kontakt {
+    height: 60vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+}
+
+.heading_kontakt_content  {
+    height: 60vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.kontakt_content {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    background-color: #e8ded121;
+    gap: 50px;
+}
+
+.kontakt_text {
+    width: 300px;
+    height: 800px;
+
+}
+
+.kontakt_img {
+    height: 800px;
+    width: 800px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+/* Footer styling */
+
+.footer {
+    background-color: #530000;
+    height: 40vh;
+    width: 100vw;
+    color: whitesmoke;
+    padding-top: 20px;
+}
+
+.footer_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.footer_content a {
+    color: whitesmoke;
+}
+
+.footer_contact {
+    text-align: center;
+}
+ 
+.footer_social {
+    text-align: center;
+}
+
+.footer_sitemap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+} 
+
+
+.footer_copyright {
+    height: 50px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1366px) {
+    .indexbox {
+        width: 300px;
+        height: 250px;
+    }
+
+    .udstilling1_row_content {
+        width: 300px;
+        height: 700px;
+    }
+
+    .udstilling_1_item {
+        width: 300px;
+        height: 500px;
+    }
+
+    .kontakt_content {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    h1 {
+        font-size: 70px !important;
+    }
+
+    .nav-menu {
+        height: auto;
+        flex-direction: column !important;
+    }
+
+    .headerbtns {
+        flex-direction: column;
+        gap: 50px;
+    }
+    .btn1 {
+        width: 200px !important;
+    }
+
+    .indexcategories {
+        height: auto;
+    }
+    .indexboxes {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        flex-direction: column;
+
+    }
+    .indexbox {
+        width: 90vw;
+        height: 50vh;
+    }
+
+    .udstillinger1, .udstillinger2, .udstillinger3 {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .udstillinger2 {
+        flex-direction: column-reverse;
+    }
+
+    .udstillingerimg {
+        margin-top: 20px;
+        height: 80vh;
+        width: 90vw;
+        background-size: cover;
+    }
+
+    .udstilling_img {
+        background-size: contain;
+    }
+
+    .udstillinger_subtext {
+        width: 80vw;
+        height: auto;
+    }
+
+    .udstilling_row1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .udstilling1_row_content {
+        width: 400px !important;
+        flex-direction: column;
+    }
+    
+    .udstilling_1_item {
+        width: 400px;
+    }
+    
+
+    .footer {
+        height: auto;
+        gap: 20px;
+    }
+
+    .footer_content {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    .topnav {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 1000px){
+    .nav-menu {
+        display: none;
+    }
+  }
